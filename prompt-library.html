@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prompt Library | Marginalia</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="topics.js"></script>
+  <script defer src="tools.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="index.html"><i aria-hidden="true">m.</i> Marginalia</a><a class="back" href="index.html">All templates</a></header>
+  <main class="study-tool" data-tool="library">
+    <p class="eyebrow">Find a question</p>
+    <h1>Prompt Library</h1>
+    <p>Choose a topic or search across all questions and explanations.</p>
+    <div class="filters">
+      <label>Search <input id="search" type="search" placeholder="e.g. recurrence"></label>
+      <label>Topic <select id="topic"><option value="">All topics</option></select></label>
+    </div>
+    <p id="result-count" role="status"></p>
+    <div id="results" class="results"></div>
+  </main>
+</body>
+</html>
