@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Marginalia · Study desk</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="topics.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header><span class="brand"><i aria-hidden="true">m.</i> Marginalia</span><span>Study desk</span></header>
+  <div class="layout">
+    <aside><h2>Notebooks</h2><nav aria-label="Study notebooks" id="notebooks"></nav>
+      <p class="note">A local demo with prepared study answers.</p></aside>
+    <main>
+      <p class="eyebrow">Computer science / Study notebook</p>
+      <h1 id="title"></h1><p id="intro"></p>
+      <section aria-label="Study conversation" id="thread" aria-live="polite"></section>
+      <form id="composer"><label for="question">Ask about this topic</label>
+        <div class="input-row"><input id="question" required maxlength="240" placeholder="Type a study question…" autocomplete="off"><button type="submit">Ask ↗</button></div>
+        <div id="suggestions" aria-label="Suggested questions"></div>
+      </form>
+      <p id="status" role="status"></p>
+    </main>
+  </div>
+</body>
+</html>

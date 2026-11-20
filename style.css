@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; --paper: #fbf8ef; --ink: #212f2a; --forest: #173d33; --line: #d7d9ca; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 "DM Sans", "Segoe UI", sans-serif; }
+header { min-height: 74px; padding: 12px 5vw; display: flex; align-items: center; justify-content: space-between; background: var(--forest); color: #fff9e8; }
+header > span:last-child, .eyebrow, aside h2 { font: 600 12px/1.5 "Courier New", monospace; text-transform: uppercase; letter-spacing: .12em; }
+.brand { font: 30px Georgia, serif; display: flex; align-items: center; gap: 13px; }
+.brand i { display: grid; place-items: center; width: 40px; height: 40px; background: #d7e8af; color: var(--forest); border-radius: 9px; }
+.layout { max-width: 1280px; margin: auto; display: grid; grid-template-columns: 245px minmax(0,1fr); min-height: calc(100vh - 74px); }
+aside { padding: 48px 20px; background: #eeefe4; border-inline-end: 1px solid var(--line); }
+aside h2 { margin: 0 12px 16px; }
+button, input { font: inherit; }
+button { cursor: pointer; color: inherit; }
+button:focus-visible, input:focus-visible { outline: 3px solid #aa611c; outline-offset: 3px; }
+nav { display: grid; gap: 6px; }
+nav button { padding: 10px 12px; border: 0; border-radius: 5px; text-align: left; background: transparent; }
+nav button[aria-current="page"] { background: #d6e2c5; color: #163b2b; font-weight: 650; }
+.note { margin: 36px 12px; color: #546155; font-size: 13px; }
+main { width: 100%; max-width: 900px; padding: clamp(24px,5vw,70px); }
+.eyebrow { color: #57694d; margin: 0; }
+h1 { font: normal clamp(40px,5vw,68px)/1.05 Georgia, serif; letter-spacing: -.045em; margin: 14px 0; }
+#intro { color: #526255; margin: 0 0 30px; }
+article { background: #fffdf7; border: 1px solid var(--line); border-left: 4px solid #829b65; padding: 18px 22px; margin: 14px 0; border-radius: 5px; overflow-wrap: anywhere; }
+article h2 { font: normal 24px/1.25 Georgia, serif; margin: 0; }
+article p { white-space: pre-line; }
+.copy, #suggestions button { background: transparent; border: 1px solid #b5c1ac; border-radius: 20px; font-size: 13px; padding: 5px 12px; }
+button:hover { filter: brightness(.94); background-color: #dde6d1; }
+form { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 20px; }
+label { display: block; font-weight: 650; margin-bottom: 8px; }
+.input-row { display: flex; gap: 8px; }
+input { flex: 1; width: 0; min-width: 0; border: 1px solid #abb6a5; border-radius: 6px; padding: 12px; background: white; }
+.input-row button { border: 0; border-radius: 6px; background: var(--forest); color: white; padding: 0 18px; }
+#suggestions { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 12px; }
+#status { font-size: 14px; }
+@media(max-width: 720px) {
+  .layout { display: block; }
+  aside { padding: 16px 20px; border-bottom: 1px solid var(--line); }
+  aside h2 { margin: 0 0 6px; }
+  nav { display: flex; gap: 4px; flex-wrap: wrap; }
+  nav button { font-size: 14px; padding: 6px 9px; }
+  .note { margin: 8px 0 0; }
+  main { padding: 24px 20px; }
+}
