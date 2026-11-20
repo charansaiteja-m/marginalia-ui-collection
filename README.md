@@ -18,7 +18,7 @@ Download or clone the repository and open `index.html` in a browser. Select any 
 | AI Response Cards · Flashcards | Reveal the answer, then select **Next**. Choose a topic to focus the deck. |
 | AI Content Generator · Revision Planner | Choose topics and a duration, build a timed plan, then check a task to update progress. |
 
-The four pages share `style.css` and the study data in `topics.js`. The home page links to each standalone template. At phone widths the template cards stack and the Study Chat notebook controls move above the conversation.
+Study Chat uses a dark conversation workspace. Prompt Library uses a lime-accented editorial search layout. Recall Studio uses stacked peach and plum cards. Session Planner uses a blue planning dashboard with a checklist beside the controls on desktop. Shared layout rules live in `style.css`, template-specific styles in `themes.css`, and study data in `topics.js`. The home page links to each standalone template. At phone widths the template cards stack and the Study Chat notebook controls move above the conversation.
 
 ## Design references
 

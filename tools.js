@@ -117,4 +117,5 @@ if (page.dataset.tool === "planner") {
     showProgress();
   });
   list.addEventListener("change", showProgress);
+  byId("planner").requestSubmit();
 }
