@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Session Planner | Marginalia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="themes.css">
+  <script defer src="topics.js"></script>
+  <script defer src="tools.js"></script>
+</head>
+<body class="planner">
+  <header><a class="brand" href="index.html"><i aria-hidden="true">m.</i> Session Planner</a><a class="back" href="index.html">All templates</a></header>
+  <main class="study-tool" data-tool="planner">
+    <p class="eyebrow">Plan a study session</p>
+    <h1>Revision Planner</h1>
+    <p>Select topics and split your study time into three tasks per topic.</p>
+    <div class="workspace">
+    <form id="planner">
+      <fieldset><legend>Topics to revise</legend><div id="choices"></div></fieldset>
+      <label class="deck-label">Available time <select id="minutes"><option value="15">15 minutes</option><option value="30" selected>30 minutes</option><option value="45">45 minutes</option><option value="60">60 minutes</option></select></label>
+      <button class="action" type="submit">Build plan</button>
+    </form>
+    <section aria-label="Revision checklist">
+      <h2>Session checklist</h2>
+      <p id="progress" role="status"></p>
+      <ul class="checklist" id="plan"></ul>
+    </section>
+    </div>
+  </main>
+</body>
+</html>

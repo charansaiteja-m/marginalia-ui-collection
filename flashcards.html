@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recall Studio | Marginalia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="themes.css">
+  <script defer src="topics.js"></script>
+  <script defer src="tools.js"></script>
+</head>
+<body class="cards">
+  <header><a class="brand" href="index.html"><i aria-hidden="true">m.</i> Recall Studio</a><a class="back" href="index.html">All templates</a></header>
+  <main class="study-tool" data-tool="flashcards">
+    <p class="eyebrow">Practice recall</p>
+    <h1>Flashcards</h1>
+    <p>Try answering each question before revealing the explanation.</p>
+    <label class="deck-label">Deck <select id="topic"><option value="">All topics</option></select></label>
+    <article id="card">
+      <p id="position" class="eyebrow" aria-live="polite"></p>
+      <h2 id="card-question"></h2>
+      <p id="card-answer" hidden></p>
+      <button class="action" id="reveal" type="button" aria-controls="card-answer" aria-expanded="false">Reveal answer</button>
+    </article>
+    <div class="button-row"><button class="secondary" id="previous" type="button">Previous</button><button class="secondary" id="next" type="button">Next</button></div>
+  </main>
+</body>
+</html>
